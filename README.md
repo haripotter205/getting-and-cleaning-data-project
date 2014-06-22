@@ -26,24 +26,24 @@ unzip(zip.file)
 ## EXPLANATION OF SCRIPT
 
 * necessary packages are first installed
-*data from all the .txt files are read using read.table command
-*column names are given to each file
-*testdata and training data are separately column binded
-*the above result is row binded 
-*This gives the merged data of test and train
+* data from all the .txt files are read using read.table command
+* column names are given to each file
+* testdata and training data are separately column binded
+* the above result is row binded 
+* This gives the merged data of test and train
 
-*using grep , mean and standard deviation columns are alone extracted
-*other features are ignored
+* using grep , mean and standard deviation columns are alone extracted
+* other features are ignored
 
-*activity Id is replaced by corresponding activitynames by using activityType file
+* activity Id is replaced by corresponding activitynames by using activityType file
 
-*to improve readability, the columns are given proper names
-*for eg. X,Y,Z are replaced as Xaxis,Yaxis,Zaxis : BodyACC or bodyacc is replaced by acceleration of body
+* to improve readability, the columns are given proper names
+* for eg. X,Y,Z are replaced as Xaxis,Yaxis,Zaxis : BodyACC or bodyacc is replaced by acceleration of body
 
-*the data obtained is sorted according to subject id after taking MEAN columnwise
-*Result tidyData contains mean of each variable and subjectid of features that contain mean and standard deviation
-*write.table doesnt provide a proper readable output. COlumns are misaligned
-*To prevent this, we use cat and capture.output
+* the data obtained is sorted according to subject id after taking MEAN columnwise
+* Result tidyData contains mean of each variable and subjectid of features that contain mean and standard deviation
+* write.table doesnt provide a proper readable output. COlumns are misaligned
+* To prevent this, we use cat and capture.output
 
 ## The tidy data is tidyData.txt
 ##Scroll down to see all the features. They are concatenated vertically to provide a neat output
